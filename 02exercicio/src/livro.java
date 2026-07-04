@@ -5,6 +5,12 @@ public class livro {
     private int paginas;
     private boolean disponivel = true;
 
+    public livro(String titulo, String autor, int paginas) {
+        setTitulo(titulo);
+        setAutor(autor);
+        setPaginas(paginas);
+    }
+
     public String getTitulo() {
         return titulo;
     }
