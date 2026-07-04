@@ -32,6 +32,14 @@ public class livro {
             this.paginas = paginas;
     }
 
+    public boolean isDisponivel() {
+        return disponivel;
+    }
+
+    public void setDisponivel(boolean disponivel) {
+        this.disponivel = disponivel;
+    }
+
     public void emprestar() {
         if (disponivel)
             disponivel = false;
@@ -40,6 +48,13 @@ public class livro {
     public void devolver() {
         if (!disponivel)
             disponivel = true;
+    }
+
+    public void exibirDetalhes() {
+        System.out.println("Título do livro: " + getTitulo());
+        System.out.println("Autor: " + getAutor());
+        System.out.println("Número de páginas: " + getPaginas());
+        System.out.println("Está disponivel? " + isDisponivel());
     }
 
 
