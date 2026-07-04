@@ -5,6 +5,15 @@ public class livro {
     private int paginas;
     private boolean disponivel = true;
 
-    
+    public void emprestar() {
+        if (disponivel)
+            disponivel = false;
+    }
+
+    public void devolver() {
+        if (!disponivel)
+            disponivel = true;
+    }
+
 
 }
