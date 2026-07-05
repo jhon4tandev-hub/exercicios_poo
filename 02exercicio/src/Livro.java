@@ -1,11 +1,11 @@
-public class livro {
+public class Livro {
 
     private String titulo;
     private String autor;
     private int paginas;
     private boolean disponivel = true;
 
-    public livro(String titulo, String autor, int paginas) {
+    public Livro(String titulo, String autor, int paginas) {
         setTitulo(titulo);
         setAutor(autor);
         setPaginas(paginas);
